@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*TODO: make navbar go to left in tablet, desktop & go to top in phone with media query*/
+body {
+    font-family:'roboto';
+    margin: 0px;
+    display: flex;
+}
+
+#navbar {
+    flex: 300px 0 0;
+    height: 100vh;
+    border-right: 2px solid black;
+}
+
+#navbar header {
+    padding: 0px 0px 0px 20px;
+}
+
+.nav-link {
+    width: calc(100% - 40px);
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    border-top: 1px solid black;
+}
+
+#navbar header {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 400;
+}
+
+#main-doc {
+    height: 100vh;
+    padding: 0px 30px;
+    overflow-y: scroll;
+}
+
+p {
+    padding: 0px 20px;
+}
+
+.main-section header {
+    display: block;
+    font-size: 1.7em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 400;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/*media query*/
+@media only screen and (max-width: 769px) {
+    /*make navbar go to left*/
+    body {
+        display: block;
+    }
+
+    #navbar {
+        width: 100%;
+        height: 230px;
+        overflow-y: scroll;
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+
+    #navbar header {
+        text-align: center;
+    }
+}
